@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boga Showrya — Penetration Tester</title>
+<meta name="description" content="Boga Showrya — eJPT-certified Penetration Tester. Network, web application, and Active Directory security testing.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="dot"></span>showrya@sec:~$</a>
+    <button class="nav-toggle" aria-label="toggle menu">MENU</button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">~/</a></li>
+      <li><a href="about.html">~/about</a></li>
+      <li><a href="skills.html">~/skills</a></li>
+      <li><a href="projects.html">~/projects</a></li>
+      <li><a href="experience.html">~/experience</a></li>
+      <li><a href="contact.html">~/contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="reveal in">
+          <div class="eyebrow">status: available for opportunities</div>
+          <h1>Boga Showrya<br><span class="accent">Penetration Tester</span></h1>
+          <p class="lede">
+            eJPT-certified, top 1% on TryHackMe. I break things on purpose —
+            networks, web apps, and Active Directory environments — then write up
+            exactly how to fix them.
+          </p>
+          <div class="btn-row">
+            <a href="projects.html" class="btn btn-primary">View projects →</a>
+            <a href="assets/resume.pdf" class="btn" download>Download resume ⭳</a>
+            <a href="contact.html" class="btn">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="matrix-wrap">
+            <canvas id="matrix-canvas"></canvas>
+            <div class="term" style="position:relative;">
+              <div class="term-bar">
+                <span class="term-dot" style="background:#5f5a55"></span>
+                <span class="term-dot" style="background:#5f5a55"></span>
+                <span class="term-dot" style="background:#5f5a55"></span>
+                <span class="term-title">showrya@sec — zsh — 80×24</span>
+              </div>
+              <div class="term-body" id="boot" style="background:rgba(16,19,23,0.88); backdrop-filter:blur(2px);"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats reveal">
+        <div class="stat"><div class="num">450+</div><div class="lbl">Labs completed</div></div>
+        <div class="stat"><div class="num">eJPT</div><div class="lbl">Certified pentester</div></div>
+        <div class="stat"><div class="num">3</div><div class="lbl">Domains: Network · Web · AD</div></div>
+        <div class="stat"><div class="num">2</div><div class="lbl">Tools shipped on GitHub</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">scope</div>
+        <h2>What I test</h2>
+        <p class="sub">Core domains I operate in day to day, across offense and analysis.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card reveal">
+          <div class="cat" style="color:var(--amber);">Network</div>
+          <h3>Network Penetration Testing</h3>
+          <p>Recon, enumeration, exploitation, and privilege escalation across Linux and Windows hosts using Nmap, Metasploit, and manual exploitation.</p>
+        </div>
+        <div class="card reveal">
+          <div class="cat" style="color:var(--warn);">Web</div>
+          <h3>Web Application Security</h3>
+          <p>Manual testing for SQLi, XSS, IDOR, SSRF, and auth/authorization flaws — aligned to the OWASP Top 10, using Burp Suite.</p>
+        </div>
+        <div class="card reveal">
+          <div class="cat" style="color:var(--steel);">Active Directory</div>
+          <h3>AD Security Assessments</h3>
+          <p>Enumeration, Kerberoasting, AS-REP Roasting, BloodHound-driven attack path analysis, and lateral movement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">recon.log</div>
+        <h2>Currently</h2>
+        <p class="sub">
+          Advancing through PortSwigger Web Security Academy and doing bug bounty
+          reconnaissance and vulnerability validation. Building offensive tooling
+          in Python for reconnaissance automation — see <a href="projects.html" style="color:var(--amber); border-bottom:1px solid var(--amber-dim);">projects →</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pagefoot">
+  <div class="container">
+    [ Boga Showrya ] — Hyderabad, India — built from scratch, no CMS, no tracking.
+  </div>
+</footer>
+
+<div class="statusbar">
+  <div class="seg">
+    <span class="tag">NORMAL</span>
+    <span class="hide-mobile">~/index.html</span>
+  </div>
+  <div class="seg">
+    <span id="uptime" class="hide-mobile">session 00:00</span>
+    <span class="sep hide-mobile">|</span>
+    <span>Hyderabad, IN</span>
+    <span class="sep">|</span>
+    <span id="clock">--:--:-- IST</span>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+  startMatrixRain('matrix-canvas');
+  bootTerminal('boot', [
+    { prefix: '<span class="term-prompt">showrya@sec</span><span class="term-path">:~$</span> ', text: 'whoami', instant:false },
+    { text: 'boga_showrya', instant:true, prefix:'' },
+    { text: '', instant:true },
+    { prefix: '<span class="term-prompt">showrya@sec</span><span class="term-path">:~$</span> ', text: 'cat role.txt', instant:false },
+    { text: '<span class="term-out">Penetration Tester // Offensive Security</span>', instant:true, prefix:'' },
+    { prefix: '<span class="term-prompt">showrya@sec</span><span class="term-path">:~$</span> ', text: 'cat certs.txt', instant:false },
+    { text: '<span class="term-out">[<span class="term-key">✓</span>] eJPT — eLearnSecurity Junior Penetration Tester</span>', instant:true, prefix:'' },
+    { prefix: '<span class="term-prompt">showrya@sec</span><span class="term-path">:~$</span> ', text: 'tryhackme --stats', instant:false },
+    { text: '<span class="term-out">450+ labs completed</span>', instant:true, prefix:'' },
+    { prefix: '<span class="term-prompt">showrya@sec</span><span class="term-path">:~$</span> ', text: 'echo $STATUS', instant:false },
+    { text: '<span class="term-key">Open to opportunities.</span>', instant:true, prefix:'' },
+  ], { typeSpeed:22, lineDelay:340 });
+</script>
+</body>
+</html>

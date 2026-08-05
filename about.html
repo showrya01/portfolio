@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Boga Showrya</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="dot"></span>showrya@sec:~$</a>
+    <button class="nav-toggle" aria-label="toggle menu">MENU</button>
+    <ul class="nav-links">
+      <li><a href="index.html">~/</a></li>
+      <li><a href="about.html" class="active">~/about</a></li>
+      <li><a href="skills.html">~/skills</a></li>
+      <li><a href="projects.html">~/projects</a></li>
+      <li><a href="experience.html">~/experience</a></li>
+      <li><a href="contact.html">~/contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <section class="hero" style="padding-bottom:0;">
+    <div class="container">
+      <div class="eyebrow reveal in">whoami</div>
+      <h1 class="reveal in" style="font-size:clamp(26px,3.6vw,38px);">About</h1>
+    </div>
+  </section>
+
+  <section style="border-top:none;">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="reveal">
+          <p style="font-size:16px; color:var(--text);">
+            I'm Showrya — a penetration tester based in Hyderabad, working at the
+            intersection of offense and documentation. My job isn't just breaking
+            into systems; it's proving <em>exactly</em> how and telling someone
+            how to close the door behind me.
+          </p>
+          <p>
+            I got into security the way most people in this field do: by taking
+            things apart to see how they work, then wondering how they break. That
+            curiosity turned into structured practice — I've now cleared 450+
+            hands-on labs on TryHackMe across network, web, and Active Directory
+            attack paths, and hold the eJPT certification from INE.
+          </p>
+          <p>
+            Day to day, I work across three fronts: network penetration testing
+            (recon → exploitation → privilege escalation on Linux and Windows),
+            web application security (manual testing for SQLi, XSS, IDOR, SSRF,
+            and business logic flaws), and Active Directory assessments —
+            enumeration, Kerberoasting, AS-REP Roasting, and BloodHound-driven
+            attack path mapping.
+          </p>
+          <p>
+            I write things down. Every engagement or lab turns into a proof-of-concept
+            write-up and a remediation note, because a finding nobody can act on
+            isn't worth much. Outside of assigned labs, I build my own reconnaissance
+            tooling in Python — see <a href="projects.html" style="color:var(--amber);border-bottom:1px solid var(--amber-dim);">projects</a>
+            — and I'm currently working through PortSwigger's Web Security Academy
+            while doing bug bounty recon and vulnerability validation on the side.
+          </p>
+          <div class="btn-row" style="margin-top:20px;">
+            <a href="assets/resume.pdf" class="btn btn-primary" download>Download resume ⭳</a>
+            <a href="contact.html" class="btn">Get in touch</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="about-photo" style="aspect-ratio:3/4;">
+            <img src="assets/profile.jpg" alt="Boga Showrya on-site during a hiking trip">
+            <div class="cap">// off the clock — Maharashtra, IN</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">education</div>
+        <h2>Background</h2>
+      </div>
+      <div class="tl reveal">
+        <div class="tl-item">
+          <div class="tl-date">Graduated June 2026</div>
+          <h3>B.Tech, Computer Science &amp; Engineering (Cybersecurity)</h3>
+          <span class="org">CMR Institute of Technology, Hyderabad · CGPA 7.8 / 10</span>
+          <p style="font-size:14px; margin:0;">Specialized coursework in cybersecurity alongside core CS — the formal half of a path that's mostly been built through labs, CTFs, and independent tooling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pagefoot">
+  <div class="container">[ Boga Showrya ] — Hyderabad, India</div>
+</footer>
+
+<div class="statusbar">
+  <div class="seg">
+    <span class="tag">NORMAL</span>
+    <span class="hide-mobile">~/about.html</span>
+  </div>
+  <div class="seg">
+    <span id="uptime" class="hide-mobile">session 00:00</span>
+    <span class="sep hide-mobile">|</span>
+    <span>Hyderabad, IN</span>
+    <span class="sep">|</span>
+    <span id="clock">--:--:-- IST</span>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

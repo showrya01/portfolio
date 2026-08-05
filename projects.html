@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Boga Showrya</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="dot"></span>showrya@sec:~$</a>
+    <button class="nav-toggle" aria-label="toggle menu">MENU</button>
+    <ul class="nav-links">
+      <li><a href="index.html">~/</a></li>
+      <li><a href="about.html">~/about</a></li>
+      <li><a href="skills.html">~/skills</a></li>
+      <li><a href="projects.html" class="active">~/projects</a></li>
+      <li><a href="experience.html">~/experience</a></li>
+      <li><a href="contact.html">~/contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <section class="hero" style="padding-bottom:0;">
+    <div class="container">
+      <div class="eyebrow reveal in">ls ~/projects</div>
+      <h1 class="reveal in" style="font-size:clamp(26px,3.6vw,38px);">Projects &amp; Tooling</h1>
+      <p class="reveal in" style="max-width:60ch;">Tools I've built for reconnaissance and OSINT, plus the lab documentation I maintain publicly.</p>
+    </div>
+  </section>
+
+  <section style="border-top:none;">
+    <div class="container">
+      <div class="grid-2">
+
+        <div class="card reveal">
+          <div class="cat" style="color:var(--amber);">OSINT Tool</div>
+          <h3>DorkMatrix</h3>
+          <p>Multi-engine OSINT dorking tool. Runs a single query across five search engines — Google, Bing, DuckDuckGo, Brave, and Yandex — for faster reconnaissance. Supports advanced Google dork operators to strengthen information-gathering for security research.</p>
+          <ul class="taglist">
+            <li>Python</li><li>OSINT</li><li>Recon</li><li>Web</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/showrya01/DorkMatrix" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="cat" style="color:var(--steel);">Recon Framework</div>
+          <h3>ReconVorteX</h3>
+          <p>Automated domain reconnaissance engine built for bug bounty workflows. Handles end-to-end attack surface discovery: asset discovery, live host identification, subdomain enumeration, and technology fingerprinting.</p>
+          <p>Also runs JavaScript analysis, historical URL collection, sensitive endpoint discovery, subdomain takeover detection, and risk-based prioritization.</p>
+          <ul class="taglist">
+            <li>Python</li><li>Bug Bounty</li><li>Automation</li><li>Attack Surface</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/showrya01/ReconVorteX" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="cat" style="color:var(--warn);">Documentation</div>
+          <h3>eJPT Labs</h3>
+          <p>Hands-on documentation from eJPT preparation — network pentesting, web exploitation, and Windows/Linux privilege escalation, with personal study notes attached to each lab.</p>
+          <ul class="taglist">
+            <li>Network</li><li>Priv-Esc</li><li>Write-ups</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/showrya01/Ejpt_labs" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="cat" style="color:var(--warn);">Documentation</div>
+          <h3>TryHackMe Challenges</h3>
+          <p>A growing repository of professional penetration testing reports written for TryHackMe rooms — findings, proof-of-concept steps, and remediation recommendations, formatted like real client deliverables.</p>
+          <ul class="taglist">
+            <li>Reporting</li><li>TryHackMe</li><li>PoC</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/showrya01/TRYHACKME-CHALLENGES" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pagefoot">
+  <div class="container">[ Boga Showrya ] — Hyderabad, India</div>
+</footer>
+
+<div class="statusbar">
+  <div class="seg">
+    <span class="tag">NORMAL</span>
+    <span class="hide-mobile">~/projects.html</span>
+  </div>
+  <div class="seg">
+    <span id="uptime" class="hide-mobile">session 00:00</span>
+    <span class="sep hide-mobile">|</span>
+    <span>Hyderabad, IN</span>
+    <span class="sep">|</span>
+    <span id="clock">--:--:-- IST</span>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
